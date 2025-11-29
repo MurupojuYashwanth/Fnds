@@ -1,24 +1,44 @@
-# Logs
-logs
-*.log
+# Node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Build output
+dist/
+build/
+.out/
+.cache/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Local environment variables
+.env
+.env.local
+.env.production
+.env.development
+.env.*
+!.env.example
+
+# Vite
+.vite/
+vite.config.ts.timestamp*
+vite.config.js.timestamp*
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Editor & OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+
+# Optional: Ignore metadata from your ZIP
+metadata.json
